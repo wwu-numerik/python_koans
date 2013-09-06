@@ -39,9 +39,6 @@ class AboutNone(Koan):
 
             self.assertEqual(__, ex.__class__)
 
-            # What message was attached to the exception?
-            # (HINT: replace __ with part of the error message.)
-            self.assertMatch(__, ex.args[0])
 
     def test_none_is_distinct(self):
         """
