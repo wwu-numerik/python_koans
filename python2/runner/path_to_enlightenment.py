@@ -44,7 +44,11 @@ from koans.about_attribute_access import AboutAttributeAccess
 from koans.about_deleting_objects import AboutDeletingObjects
 from koans.about_proxy_object_project import *
 from koans.about_extra_credit import AboutExtraCredit
-from koans.numpy import *
+from koans.about_numpy_array_creation import AboutNumpyArrayCreation
+from koans.about_numpy_array_views import AboutArrayViews
+from koans.about_numpy_array_operations import AboutArrayOperations
+from koans.about_numpy_equations import AboutEquations
+from koans.about_numpy_plotting import AboutPlotting
 
 def koans():
     loader = unittest.TestLoader()
@@ -88,9 +92,9 @@ def koans():
     #suite.addTests(loader.loadTestsFromTestCase(AboutDeletingObjects))
     #suite.addTests(loader.loadTestsFromTestCase(AboutProxyObjectProject))
     #suite.addTests(loader.loadTestsFromTestCase(TelevisionTest))
-    suite.addTests(loader.loadTestsFromTestCase(AboutArrayCreation))
-    suite.addTests(loader.loadTestsFromTestCase(AboutArrayOperations))
+    suite.addTests(loader.loadTestsFromTestCase(AboutNumpyArrayCreation))
     suite.addTests(loader.loadTestsFromTestCase(AboutArrayViews))
+    suite.addTests(loader.loadTestsFromTestCase(AboutArrayOperations))
     suite.addTests(loader.loadTestsFromTestCase(AboutEquations))
     suite.addTests(loader.loadTestsFromTestCase(AboutPlotting))
     suite.addTests(loader.loadTestsFromTestCase(AboutExtraCredit))

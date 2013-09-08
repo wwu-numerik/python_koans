@@ -3,9 +3,41 @@
 
 from runner.koan import *
 import numpy as np
+from itertools import product
 
-class AboutArrayCreation(Koan):
-  
-  def test_create_empty(self):
-    ar = np.array()
-    self.assertEqual(__, len(ar))
+class AboutNumpyArrayCreation(Koan):
+    def test_create_empty(self):
+        ar = np.array([])
+        self.assertEqual(__, ar.shape)
+        
+    def test_create_from_lists(self):
+        ar = np.array([1,2,3])
+        self.assertEqual(__, ar.shape)
+        ar = np.array([[1,2,3], [4,5]])
+        self.assertEqual(__, ar.shape)
+        ar = np.array([[1,2,3], [4,5,6]])
+        self.assertEqual(__, ar.shape)
+        ar = np.array([[1,2], [4,5], [6,7]])
+        self.assertEqual(__, ar.shape)
+
+    def test_create_special(self):
+        ar = np.ones((2,2))
+        self.assertEqual(__, ar.shape)
+        self.assertEqual(__, ar[0,0])
+        self.assertEqual(__, ar[1,1])
+        ar = np.zeros((3,3,3))
+        self.assertEqual(__, ar.shape)
+        self.assertEqual(__, ar[2,2,2])
+        ar = np.arange(3)
+        self.assertArrayEqual(__, ar)
+        ar = np.identity(2)
+        self.assertArrayEqual(__, ar)
+
+    def test_create_with_cast(self):
+        ar1 = np.array([1,2],dtype=float)
+        ar2 = np.array([1,2],dtype=int)
+        ar3 = np.array([1,2],dtype=complex)
+        self.assertEqual(__, ar1[0])
+        self.assertEqual(__, ar2[0])
+        self.assertEqual(__, ar3[0])
+        self.assertEqual(__, ar1[0] == ar2[0])
