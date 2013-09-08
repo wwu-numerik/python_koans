@@ -11,8 +11,10 @@ class AboutNumpyArrayCreation(Koan):
         self.assertEqual(__, ar.shape)
         
     def test_create_from_lists(self):
+        # the simplest array construction takes a list of values
         ar = np.array([1,2,3])
         self.assertEqual(__, ar.shape)
+        # nested lists create multi-dimensional arrays
         ar = np.array([[1,2,3], [4,5]])
         self.assertEqual(__, ar.shape)
         ar = np.array([[1,2,3], [4,5,6]])
@@ -21,6 +23,7 @@ class AboutNumpyArrayCreation(Koan):
         self.assertEqual(__, ar.shape)
 
     def test_create_special(self):
+        # create from defined 'patterns' with dynamic shape
         ar = np.ones((2,2))
         self.assertEqual(__, ar.shape)
         self.assertEqual(__, ar[0,0])
@@ -28,9 +31,10 @@ class AboutNumpyArrayCreation(Koan):
         ar = np.zeros((3,3,3))
         self.assertEqual(__, ar.shape)
         self.assertEqual(__, ar[2,2,2])
+        # numpy array-range works like builtin range
         ar = np.arange(3)
         self.assertArrayEqual(__, ar)
-        ar = np.identity(2)
+        ar = np.identity(4,14,3)
         self.assertArrayEqual(__, ar)
 
     def test_create_with_cast(self):
