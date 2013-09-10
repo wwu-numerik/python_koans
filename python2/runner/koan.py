@@ -3,6 +3,7 @@
 
 import unittest
 import re
+import numpy as np
 
 # Starting a classname or attribute with an underscore normally implies Private scope.
 # However, we are making an exception for __ and ___.
@@ -38,3 +39,7 @@ class Koan(unittest.TestCase):
         if m and m.group(0):
             raise self.failureException, \
                 (msg or '{0!r} matches {1!r}'.format(pattern, string))
+
+    def assertArrayEqual(self, a, b):
+        if not np.array_equal(a, b):
+            raise self.failureException, '{} does not match array({})'.format(a,b)
