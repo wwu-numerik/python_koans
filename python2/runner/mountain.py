@@ -34,6 +34,8 @@ class Mountain:
         4: ['about_classes', 'about_new_style_classes', 'about_class_attributes', 'about_with_statements', 'about_dice_project',],
         5: ['about_inheritance', 'about_multiple_inheritance', 'about_scope', 'about_modules', 'about_packages',],
         6: ['about_numpy_array_creation', 'about_numpy_array_operations', 'about_numpy_array_views', 'about_numpy_equations', ], 
+        7: ['about_monkey_patching', 'about_method_bindings', 'about_decorating_with_functions', 'about_decorating_with_classes',],
+        8: ['about_attribute_access', 'about_deleting_objects', 'about_proxy_object_project', 'about_extra_credit',]
       }
       
       return self.walk_the_path([''] + sessions[num])
