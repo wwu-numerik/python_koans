@@ -21,7 +21,7 @@ class AboutArrayViews(Koan):
     def test_iteration(self):
         ar = np.ones((5,))
         for x in ar:
-            self.assertArrayEqual(__, x)
+            self.assertEqual(__, x)
         ar = np.ones((5,5))
         for x in ar:
             self.assertArrayEqual(__, x)
