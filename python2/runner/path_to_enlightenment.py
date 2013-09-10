@@ -26,7 +26,6 @@ from koans.about_generators import AboutGenerators
 from koans.about_lambdas import AboutLambdas
 from koans.about_scoring_project import AboutScoringProject
 from koans.about_classes import AboutClasses
-from koans.about_new_style_classes import AboutNewStyleClasses
 from koans.about_with_statements import AboutWithStatements
 from koans.about_monkey_patching import AboutMonkeyPatching
 from koans.about_dice_project import AboutDiceProject
@@ -75,23 +74,22 @@ def koans():
     suite.addTests(loader.loadTestsFromTestCase(AboutLambdas))
     suite.addTests(loader.loadTestsFromTestCase(AboutScoringProject))
     suite.addTests(loader.loadTestsFromTestCase(AboutClasses))
-    suite.addTests(loader.loadTestsFromTestCase(AboutNewStyleClasses))
     suite.addTests(loader.loadTestsFromTestCase(AboutWithStatements))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutMonkeyPatching))
+    suite.addTests(loader.loadTestsFromTestCase(AboutMonkeyPatching))
     suite.addTests(loader.loadTestsFromTestCase(AboutDiceProject))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutMethodBindings))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutDecoratingWithFunctions))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutDecoratingWithClasses))
+    suite.addTests(loader.loadTestsFromTestCase(AboutMethodBindings))
+    suite.addTests(loader.loadTestsFromTestCase(AboutDecoratingWithFunctions))
+    suite.addTests(loader.loadTestsFromTestCase(AboutDecoratingWithClasses))
     suite.addTests(loader.loadTestsFromTestCase(AboutInheritance))
     suite.addTests(loader.loadTestsFromTestCase(AboutMultipleInheritance))
     suite.addTests(loader.loadTestsFromTestCase(AboutScope))
     suite.addTests(loader.loadTestsFromTestCase(AboutModules))
     suite.addTests(loader.loadTestsFromTestCase(AboutPackages))
     suite.addTests(loader.loadTestsFromTestCase(AboutClassAttributes))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutAttributeAccess))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutDeletingObjects))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutProxyObjectProject))
-    #suite.addTests(loader.loadTestsFromTestCase(TelevisionTest))
+    suite.addTests(loader.loadTestsFromTestCase(AboutAttributeAccess))
+    suite.addTests(loader.loadTestsFromTestCase(AboutDeletingObjects))
+    suite.addTests(loader.loadTestsFromTestCase(AboutProxyObjectProject))
+    suite.addTests(loader.loadTestsFromTestCase(TelevisionTest))
     suite.addTests(loader.loadTestsFromTestCase(AboutNumpyArrayCreation))
     suite.addTests(loader.loadTestsFromTestCase(AboutArrayViews))
     suite.addTests(loader.loadTestsFromTestCase(AboutArrayOperations))
