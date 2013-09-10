@@ -31,7 +31,7 @@ class Mountain:
         2: ['about_control_statements', 'about_true_and_false', 'about_sets', 'about_triangle_project', 
             'about_exceptions', 'about_triangle_project2',],
         3: ['about_iteration', 'about_comprehension', 'about_generators', 'about_lambdas', 'about_scoring_project',],
-        4: ['about_classes', 'about_new_style_classes', 'about_class_attributes', 'about_with_statements', 'about_dice_project',],
+        4: ['about_classes', 'about_class_attributes', 'about_with_statements', 'about_dice_project',],
         5: ['about_inheritance', 'about_multiple_inheritance', 'about_scope', 'about_modules', 'about_packages',],
         6: ['about_numpy_array_creation', 'about_numpy_array_operations', 'about_numpy_array_views', 'about_numpy_equations', ], 
         7: ['about_monkey_patching', 'about_method_bindings', 'about_decorating_with_functions', 'about_decorating_with_classes',],
