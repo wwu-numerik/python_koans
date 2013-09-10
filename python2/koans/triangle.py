@@ -18,9 +18,17 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
-    # DELETE 'PASS' AND WRITE THIS CODE
-    pass
-
+    sides = (a, b, c)
+    if len(filter(lambda x: x<=0, sides)):
+        raise TriangleError
+    if [s for s in sides if sum(sides) - s <= s]:
+        raise TriangleError
+    if sides.count(a) == 3:
+        return 'equilateral'
+    for s in sides:
+        if sides.count(s) == 2:
+            return 'isosceles'
+    return 'scalene'
 
 # Error class used in part 2.  No need to change this code.
 class TriangleError(StandardError):
