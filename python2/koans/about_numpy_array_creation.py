@@ -34,8 +34,8 @@ class AboutNumpyArrayCreation(Koan):
         # numpy array-range works like builtin range
         ar = np.arange(3)
         self.assertArrayEqual(__, ar)
-        ar = np.identity(4,14,3)
         self.assertArrayEqual(__, ar)
+        ar = np.identity(2)
 
     def test_create_with_cast(self):
         ar1 = np.array([1,2],dtype=float)
